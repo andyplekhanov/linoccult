@@ -1,0 +1,5 @@
+To compile AstroIO 
+you should have APSLib
+run
+./build
+to get libAstroIO.a

@@ -1,0 +1,4 @@
+rm *.o
+rm libtestAppl.a
+g++ -O2 -Wall -c *.cc -I../APSLib -I../testProg
+ar rcs libtestAppl.a *.o

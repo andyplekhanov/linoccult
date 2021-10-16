@@ -1,0 +1,4 @@
+rm *.o
+rm libloData.a
+g++ -O2 -Wall -c *.cc -I../APSLib -I../kdtree/include/CGLA -I../kdtree/include -I../kdtree/src/KDTree
+ar rcs libloData.a *.o

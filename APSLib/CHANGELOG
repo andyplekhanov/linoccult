@@ -1,0 +1,28 @@
+APSLib changelog
+
+25.11.2013 apsrandom: uint32 used instead of long
+28.01.2005 First release
+15.10.2005 APSLib-1.1.0
+ - apsmainmodule.cc
+   print versions changed
+ - apsmainmodule.h
+   In procedure GetModuleInfo Mode was added
+ - apsmodule.cc
+   FindMainModule was added
+ - apsmodule.h
+   FindMainModule was added
+ - apsobinfile.cc
+   PutRecord was corrected
+ - apsobinfile.h
+   PutRecord was corrected
+ - apssubmodule.h
+   protected changed
+ - build
+   -O2 was added
+
+04.11.2005
+ - build -Wall was added
+ - apsobinfile.cc, apsrandom.cc warning were removed
+
+23.02.2006
+  - apsbyteorder.h apsbyteorder.cc were added

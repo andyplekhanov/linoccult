@@ -1,0 +1,6 @@
+25.11.2013 apsangle.cc: variables were changed to ostreamsize and fmtflags
+APC_VecMat3D.h index -> r_index
+APC_VecMat3D.cc index -> r_index
+GNU_iomanip.h -> if GccVersion < 3
+apsabsvec.h apsvec3d.h apsvec3d.cc apsabsmat.h apsmat3d.h apsmat3d.cc were added
+05.02.2006 Several new constants were added to apsmathconst.h

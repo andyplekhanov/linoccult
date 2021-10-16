@@ -1,0 +1,7 @@
+rm *.o
+rm libAPSAstroData.a
+g++ -c -O2 -Wall *.cc  -IAPSLib -IAPSMathLib
+g++ -c jpleph.cc
+ar rcs libAPSAstroData.a *.o
+
+

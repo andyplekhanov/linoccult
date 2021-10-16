@@ -1,0 +1,3 @@
+To compile APSLib run
+./build
+to get libAPS.a

@@ -1,0 +1,4 @@
+rm *.o
+rm libAPS.a
+g++ -O2 -Wall -Woverloaded-virtual -Wconversion -Wpointer-arith -Wparentheses -Wcast-qual -Wcast-align -Wno-sign-compare -Wno-unknown-pragmas -c *.cc
+ar rcs libAPS.a *.o

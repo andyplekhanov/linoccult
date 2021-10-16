@@ -1,0 +1,11 @@
+This is a general purpose library to support
+different astronomical formats.
+AstroIO delivered under GNU Open Source licence.
+
+AstOrbReader - read astorb.dat
+TychoReader - read Tycho2 star catalog
+
+Plekhanov Andrey
+
+andyplekhanov@gmail.com
+http://andyplekhanov.narod.ru

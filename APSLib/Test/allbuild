@@ -1,0 +1,7 @@
+cd ./testAppl
+./build
+cd ..
+cd ./testProg
+./build
+cd ..
+g++ -static -o testappl testappl.cc -I./testAppl -L./APSLib -L./testAppl -L./testProg -ltestAppl -ltestImplementation -lAPS

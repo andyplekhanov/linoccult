@@ -1,0 +1,6 @@
+rm *.o
+rm libloIO.a
+g++ -O2 -Wall -c *.cc -I../APSLib -I../APSMathLib -I../APSAstroIO -I../APSAstroAlg -I../loData -I../loAppl -I../loCalc -I../kdtree/include/CGLA -I../kdtree/include -I../kdtree/src/KDTree
+ar rcs libloIO.a *.o
+
+

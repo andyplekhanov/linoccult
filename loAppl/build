@@ -1,0 +1,4 @@
+rm *.o
+rm libloAppl.a
+g++ -O2 -Wall -c *.cc -I../APSLib -I../APSMathLib -I../APSAstroIO -I../APSAstroAlg -I../loData -I../loIO -I../AstroIO -I../loCalc
+ar rcs libloAppl.a *.o

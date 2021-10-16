@@ -1,0 +1,6 @@
+rm *.o
+rm libtestImplementation.a
+g++ -c -O2 *.cc -I../APSLib -I../testAppl
+ar rcs libtestImplementation.a *.o
+
+

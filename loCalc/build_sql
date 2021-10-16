@@ -1,0 +1,6 @@
+rm *.o
+rm libloCalc.a
+g++ -Wall -c -O2 -DWITH_MYSQL *.cc -I../APSLib -I../loData -I../loAppl -I../APSMathLib -I../APSAstroData -I../APSAstroAlg -I../kdtree/include/CGLA -I../kdtree/include -I../kdtree/src/KDTree
+ar rcs libloCalc.a *.o
+
+

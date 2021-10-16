@@ -1,0 +1,32 @@
+cd ./APSLib
+./build
+cd ..
+cd ./APSMathLib
+./build
+cd ..
+cd ./APSAstroAlg
+./build
+cd ..
+cd ./APSAstroData
+./build
+cd ..
+cd ./APSAstroIO
+./build
+cd ..
+cd ./loAppl
+./build
+cd ..
+cd ./loData
+./build
+cd ..
+cd ./loIO
+./build
+cd ..
+cd ./loCalc
+./build_sql
+cd ..
+cd ./kdtree/src/CGLA
+make
+cd ../../..
+g++ -O2 -o linoccult linoccult.cc -I./loAppl -L./loAppl -L./loData -L./loIO -L./loCalc -L./APSLib -L./APSMathLib -L./APSAstroIO -L./APSAstroData -L./APSAstroAlg -Lkdtree/lib -lloAppl -lloData -lloIO -lloCalc -lAPSAstroAlg -lAPSAstroData -lAPSAstroIO -lAPSMath -lAPS -lCGLA -lmysqlclient -lz
+strip linoccult

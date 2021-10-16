@@ -1,0 +1,7 @@
+# ObsName EMail OutputFiles Sort ObserverLongitude ObserverLatitude MaxDistance MaxMv MinDuration SunElev MinDrop MinProb MinCenterProb MinStarElev
+
+# Moscow
+Moscow andyp@newtech.ru 3 1 37.544 55.702 250.0 14 1.0 -7.0 0.5 0.0 1.0 5.0
+
+# TestPoint
+TestPoint test@test.org 7 511 2o41'03.4" 8o04'31.7" 1000.0 14 1.0 0.0 0.001 0.0 1.0 0.0

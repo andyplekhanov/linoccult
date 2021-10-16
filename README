@@ -1,0 +1,137 @@
+Observations of stellar occultation by asteroids will make significant
+impact in several areas of astronomy. Observations of these events by
+professional and amateur astronomers are extremly important since
+thay can provide unique information about the size of asteroids
+and improve their orbit elements dramatically.
+
+LinOccult computes predictions of such occultation of stars by asteroids.
+
+LinOccult has been developed for Linux and distributed 
+in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+To compute time and coordinates of occultation events
+you need the following data:
+
+1. DE405 - major planets ephemeris ( ftp://ssd.jpl.nasa.gov/pub/eph/export/unix ).
+2. Star catalog(s) ( http://www.lunar-occultations.com/iota/occult4.htm ).
+3. astorb.dat - asteroid orbits ( ftp://ftp.lowell.edu/pub/elgb/astorb.dat.gz ).
+
+To display occultation coordinates on Earth surface you need to have
+the following applicatons:
+
+1. PovRay ( www.povray.org ).
+2. EarthView ( http://earthview.sourceforge.net ).
+
+To create pdf output you should have a TeTeX.
+
+To install LinOccult you should get an archive file untar and ungzip it.
+Then you should go to new directory and run ./allbuild or ./allbuild_sql
+script. In second case you should have MySQL development package installed.
+Note that by default LinOccult is statically linked. You should have static C libraries
+installed or remove static flag in script.
+
+LinOccult is a stand alone program and can be loaded by the
+following command:
+
+./linoccult <ConfigFile>
+
+Main linoccult.config file should be placed in current directory.
+
+Technical details:
+LinOccult use DE405 precomputed major planets ephemeris to precise numerical
+integration of asteroid orbit. User can select asteroids to process by
+changing several parameters in configuration file.
+
+CHANGES:
+version linoccult_1.0.0beta:
+
+1. Performance was improved 5 - 10 times by using kdtree algorithm
+   in star searching procedure
+
+2. MySQL database support was added
+
+3. Results are stored in internal database
+
+4. New text and pdf output format has been developed and implemented.
+
+5. List of sites is now supported. Each site may have is own restrictions -
+   minimal duration, maximal star magnitude, minimal probability and so on
+
+6. Several bugs were fixed
+
+7. New configuration parameters and many internal improvements were implemented
+
+version linoccult_1.1.0:
+
+1. Using asteroid orbit elements from Steve Preston and Jan Manek updates to 
+   improve predictions accuracy.
+
+2. To represent calculated data in user-friendly format new HTML occultations list output was developed.
+
+3. Processing range of asteroids was added.
+
+4. Processing stars with magnitude not more than MaxMv was added.
+
+5. Star parallax processing was added.
+
+6. Star coordinates and magnitude parameters were added to configuration file.
+
+7. Asteroid brightness calculation procedure was corrected.
+
+version LinOccult_1.1.1:
+
+1. Support of a new astorb.dat file format with 6 digits for asteroid number was added
+
+version LinOccult_2.0.0:
+
+1. All libraries and application code were updated to use "pure" C++ code with namespaces, streams and STL.
+
+2. Obsolete code was removed.
+
+3. Vector and matrix ariphmetics, integration and Chebyshev polynomials were moved to mathematical library.
+
+4. Structure of input/output library was changed.
+
+5. New input/output formats were added to use in OrbSearch.
+
+6. Two new libraries were added: APSAstroData for astronomical databases and APSAstroAlg
+for astronomical algorithms.
+
+7. Some minor bugs were fixed.
+
+8. Calculation of preliminary events was changed.
+
+version LinOccult_2.1.0:
+
+1. Make files were added ( Andrew Moore ).
+
+2. Compilation problems in Ubuntu 8.10 were fixed.
+
+3. Output format for OccultWatcher was added.
+
+4. Several bugs were fixed.
+
+version LinOccult_2.1.1:
+
+1. Bug was fixed in output to OccultWatcher.
+
+2. Uncertainty of star position was added to asteroid uncertainty.
+
+version LinOccult_2.2.0:
+
+1. Migration to 64 bit platforms.
+
+2. Some code updates to comply with modern compilers.
+
+version LinOccult_2.3.0:
+
+1. Gaia catalog is used instead of Tycho2.
+
+2. Stars position calculation was improved.
+
+Plekhanov Andrey
+http://andyplekhanov.narod.ru
+andyplekhanov@gmail.com

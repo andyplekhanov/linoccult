@@ -1,0 +1,4 @@
+rm *.o
+rm libAPSAstroIO.a
+g++ -O2 -Wall -c *.cc -IAPSLib -IAPSAstroData -IAPSAstroAlg
+ar rcs libAPSAstroIO.a *.o

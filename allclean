@@ -1,0 +1,41 @@
+cd APSLib
+rm *.a *.o *~
+rm ./Test/*~
+rm ./Test/Test/*~
+cd ./Test/testAppl
+rm *.a *.o *~
+cd ../..
+cd ./Test/testProg
+rm *.a *.o *~
+cd ../..
+cd ..
+cd APSMathLib
+rm *.a *.o *~
+cd ..
+cd APSAstroData
+rm *.a *.o *~
+cd ..
+cd APSAstroAlg
+rm *.a *.o *~
+cd ..
+cd APSAstroIO
+rm *.a *.o *~
+cd ..
+cd ./loAppl
+rm *.a *.o *~
+cd ..
+cd ./loData
+rm *.a *.o *~
+cd ..
+cd ./loIO
+rm *.a *.o *~
+cd ..
+cd ./loCalc
+rm *.a *.o *~
+cd ..
+cd ./kdtree/src/CGLA
+make clean
+cd ../../..
+rm ./kdtree/lib/libCGLA.a
+rm *~
+rm linoccult

@@ -1,0 +1,5 @@
+APC_Math.cc fabs -> abs
+APC_Math.cc flags -> std::_Ios_Fmtflags
+build g++ -c APC_*.cc -> g++ -c APC_*.cc -I../../../APSMathLib
+rm APC_VecMat3D.h APC_VecMat3D.cc
+rm GNU_iomanip.h
